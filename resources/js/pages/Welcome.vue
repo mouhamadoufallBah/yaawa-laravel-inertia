@@ -50,7 +50,7 @@ const featuredProductFiltered = computed(
             Du riz pour le ceebu jën, du bissap à partager… Retrouvez vos
             essentiels chez Awa, avec toute la teranga.
           </p>
-          <a class="btn" href="boutique.html">
+          <Link class="btn" href="/market">
             Faire mon marché
             <svg
               aria-hidden="true"
@@ -66,7 +66,7 @@ const featuredProductFiltered = computed(
             >
               <path d="M5 12h14m-5-5 5 5-5 5"></path>
             </svg>
-          </a>
+          </Link>
           <div class="hero-proof">
             <span>
               <svg

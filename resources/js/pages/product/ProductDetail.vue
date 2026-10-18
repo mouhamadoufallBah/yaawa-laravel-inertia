@@ -1,4 +1,6 @@
 <script setup>
+import ProductCard from "@/components/ProductCard.vue";
+import { Link } from "@inertiajs/vue3";
 const props = defineProps({
   product: Object,
   similarProduct: Array,
@@ -192,73 +194,25 @@ const props = defineProps({
           </p>
         </div>
       </section>
-      <!-- <section class="mt">
+      <section class="mt">
         <div class="section-heading">
           <div>
             <p class="overline">DANS LE MÊME RAYON</p>
             <h2>Pour compléter votre marché</h2>
           </div>
-          <a class="text-button" href="../boutique.html">
+          <Link class="text-button" href="/market">
             Revenir à la boutique
-          </a>
+          </Link>
         </div>
         <div class="product-grid">
-          <article
-            class="product-card"
-            data-component="ProductCard"
-            data-product-id="3"
-          >
-            <div class="product-media">
-              <a aria-label="Voir Mil local" href="03-mil.html">
-                <img
-                  alt="Mil local"
-                  height="240"
-                  loading="lazy"
-                  src="../assets/images/mil.svg"
-                  width="360"
-                />
-              </a>
-            </div>
-            <div class="product-body">
-              <p class="overline">Kaolack</p>
-              <h3>
-                <a href="03-mil.html"> Mil local </a>
-              </h3>
-              <p class="muted small">kg · 24 disponible(s)</p>
-              <span class="stock">
-                <span aria-hidden="true"> </span>
-                Disponible
-              </span>
-              <div class="product-bottom">
-                <div>
-                  <strong> 800 FCFA </strong>
-                </div>
-                <button
-                  aria-label="Ajouter Mil local au panier"
-                  class="add-button"
-                  data-action="ajouter-panier"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    fill="none"
-                    height="20"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.7"
-                    viewbox="0 0 24 24"
-                    width="20"
-                  >
-                    <path d="M12 5v14M5 12h14"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </article>
+          <ProductCard
+            v-for="product in similarProduct"
+            :key="product.id"
+            :product="product"
+          />
         </div>
-      </section> -->
+      </section>
+
       <p class="template-note">
         <svg
           aria-hidden="true"

@@ -18,7 +18,7 @@ defineProps({
                   alt="Riz brisé parfumé"
                   height="240"
                   loading="lazy"
-                  :src="`assets/${product.image}`"
+                  :src="`/assets/${product.image}`"
                   width="360"
                 />
               </Link>
