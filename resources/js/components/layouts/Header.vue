@@ -1,4 +1,6 @@
 <script setup>
+import { Link } from '@inertiajs/vue3'
+
 </script>
 
 <template>
@@ -17,7 +19,7 @@
         </span>
       </a>
       <nav aria-label="Navigation principale">
-        <a class="is-active" href="boutique.html"> Le marché </a>
+        <Link href="/market" :class="{'is-active': $page.url === '/market'}" > Le marché </Link>
         <a href="suivre.html"> Suivre ma commande </a>
         <a href="admin/index.html"> Espace Awa </a>
       </nav>
