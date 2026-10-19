@@ -1,4 +1,6 @@
 <script setup>
+import Footer from "@/components/layouts/Footer.vue";
+import Header from "@/components/layouts/Header.vue";
 import ProductCard from "@/components/ProductCard.vue";
 import { Link } from "@inertiajs/vue3";
 const props = defineProps({
@@ -8,6 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
+  <Header />
   <main id="main-content" tabindex="-1">
     <div class="container page-space">
       <nav aria-label="Fil d’Ariane" class="breadcrumbs">
@@ -235,6 +238,7 @@ const props = defineProps({
       </p>
     </div>
   </main>
+  <Footer />
 </template>
 
 <style>

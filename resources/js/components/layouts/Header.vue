@@ -12,7 +12,7 @@ import { Link } from '@inertiajs/vue3'
   <header class="site-header" data-component="AppHeader">
     <div class="container header-inner">
       <a aria-label="Teranga Market — Accueil" class="brand" href="index.html">
-        <img alt="" height="42" src="assets/logo.svg" width="42" />
+        <img alt="" height="42" src="/assets/logo.svg" width="42" />
         <span>
           teranga
           <b> market. </b>
